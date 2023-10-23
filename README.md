@@ -5,7 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Running for the first time
 
 Make sure you have node installed
+
 Run `npm install` to generate node_modules.
+
 Run `npm start` 
 
 ## Available Scripts
