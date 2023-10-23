@@ -1,0 +1,57 @@
+.countryPickerComponent{
+    margin-left: 20px;
+}
+
+.datePickerComponent {
+    margin-right: 100px;
+}
+
+.resultPickerComponent{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.searchBar {
+    background-color: white;
+    border-radius: 350px;
+    width: 60%;
+    height: 115px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searchButton {
+    background-color: #025B4B;
+    color: white;
+    height: 70px;
+    width: 185px;
+    border-radius: 35px;
+    border: transparent;
+    margin-left: auto;
+    margin-right: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: #0c3029;
+}
+
+.searchParameters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    margin-left: 1%;
+}
+
+.vl {
+    border-left: 1px solid gray;
+    opacity: 20%;
+    height: 60%;
+    margin-left: 5px;
+    margin-right: 5px;
+}

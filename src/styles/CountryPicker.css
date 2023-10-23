@@ -1,0 +1,64 @@
+.countryDropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 200px;
+    border-radius: 25px;
+    max-height: 300px;
+    overflow: auto;
+}
+
+.countryIcon {
+    color: #3B74CC;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #DEE8F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countryLabel {
+    color: #A7AAAB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.countryOption {
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.countryOption:hover {
+    background-color: #82a0a0;
+}
+
+.countryPicker {
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.countryPicker:hover {
+    background-color: #FAFBFB;
+}
+
+.countryText {
+    margin-right: 5px;
+}
+
+.currentCountry {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px; 
+}

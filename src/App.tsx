@@ -1,25 +1,59 @@
 import React from 'react';
-import logo from './logo.svg';
+import MostViewed from './pages/MostViewed';
 import './App.css';
 
+
+export type ArticleType = {
+  article: string;
+  rank: number;
+  views_ceil: number;
+}
+
+export type ContextType = {
+  itemNumber: number,
+  setItemNumber: (num: number) => void,
+  date: Date,
+  setDate: (date: Date) => void,
+  articles: ArticleType[],
+  setArticles: (articles: ArticleType[]) => void,
+  country: string,
+  setCountry: (country: string) => void,
+  error: string,
+  setError: (error: string) => void
+}
+
+// React context to pass down important information for rendering deeper child components
+export const TableContext = React.createContext<ContextType>({
+  itemNumber: 50,
+  setItemNumber: (num: number) => {},
+  date: new Date(),
+  setDate: (date: Date) => {},
+  articles: [],
+  setArticles: (articles: ArticleType[]) => {},
+  country: 'US',
+  setCountry: (country: string) => {},
+  error: "",
+  setError: (error: string) => {},
+});
+
 function App() {
+  const [itemNumber, setItemNumber] = React.useState(50);
+  const yesterdayDate = new Date();
+  yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+  const [date, setDate] = React.useState(yesterdayDate);
+  const [articles, setArticles] = React.useState<ArticleType[]>([]);
+  const [country, setCountry] = React.useState("US");
+  const [error, setError] = React.useState("");
+  const contextValue = {itemNumber, setItemNumber, date, setDate, articles, setArticles, country, setCountry, error, setError};
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TableContext.Provider value={contextValue}>
+      <div className="App">
+        <div className="search">
+          <MostViewed/>
+        </div>
+      </div>
+    </TableContext.Provider>  
   );
 }
 

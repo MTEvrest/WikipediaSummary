@@ -1,0 +1,45 @@
+.calendar {
+    position: absolute;
+    display: flex;
+    background-color: white;
+}
+
+.calendarIcon {
+    background-color: #ECF1E0;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #025B4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentDate {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px; 
+}
+
+.dateLabel{
+    align-self: start;
+    color: #A7AAAB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.datePicker {
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+}
+  
+.datePicker:hover {
+    background-color: #FAFBFB;
+}
+
+.dateText {
+    margin-right: 5px;
+}

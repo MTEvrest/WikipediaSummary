@@ -1,0 +1,60 @@
+.currentResult {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25px; 
+}
+
+.resultDropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 150px;
+    border-radius: 25px;
+}
+
+.resultIcon {
+    background-color: #FAE7CC;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: #E68A00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultLabel{
+    color: #A7AAAB;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resultNumber {
+    margin: 10px;
+    cursor: pointer;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.resultNumber:hover {
+    background-color: #82a0a0;
+}
+
+.resultPicker {
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+}
+  
+.resultPicker:hover {
+    background-color: #FAFBFB;
+}
+
+.resultText {
+    margin-right: 5px;
+}
