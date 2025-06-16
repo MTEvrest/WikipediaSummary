@@ -39,6 +39,7 @@ export const TableContext = React.createContext<ContextType>({
 function App() {
   const [itemNumber, setItemNumber] = React.useState(50);
   const yesterdayDate = new Date();
+  //Set the default date to yesterday, as there isn't complete data for today
   yesterdayDate.setDate(yesterdayDate.getDate() - 1);
   const [date, setDate] = React.useState(yesterdayDate);
   const [articles, setArticles] = React.useState<ArticleType[]>([]);
