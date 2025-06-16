@@ -4,7 +4,7 @@ import { TableContext } from "../App";
 import resultPickerStrings from "../strings/components/ResultPickerStrings";
 import "../styles/ResultPicker.css";
 
-/** ResultPicker component that displays the current max number of items to display
+/** ResultPicker component that displays the current max number of items to include in the table
  *  and contains a dropdown with a list of other max numbers.*/
 
 const ResultPicker: React.FC = () => {

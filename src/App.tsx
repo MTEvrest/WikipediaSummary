@@ -22,7 +22,7 @@ export type ContextType = {
   setError: (error: string) => void
 }
 
-// React context to pass down important information for rendering deeper child components
+// React context to pass down important information for rendering deeper child components and call the api
 export const TableContext = React.createContext<ContextType>({
   itemNumber: 50,
   setItemNumber: (num: number) => {},

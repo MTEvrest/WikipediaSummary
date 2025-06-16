@@ -2,7 +2,7 @@
 
 # Overview
 
-This project contains a functional webapp that summarizes the top Wikipedia pages in a paginated table format. The search can be controlled by three criteria: date, number of results, and the country the search results are in. After changing the search criteria, the user would hit search again to repopulate the table.
+This project contains a functional webapp that summarizes the top Wikipedia pages in a paginated table format. The search can be controlled by three criteria: date, number of results, and the country the search results are from. After changing the search criteria, the user would hit search again to repopulate the table.
 
 # Brief Explanation of Code
 
@@ -14,15 +14,15 @@ This is the highest level component, and primarily responsible for setting up th
 
 ### CountryPicker
 
-This component is one of the three parameters available in the search bar, and lets user choose what country they want to see the top wikipedia articles for. In order to get all the country codes and names I imported the npm package country-list, https://www.npmjs.com/package/country-list/.
+This component is one of the three parameters available in the search bar, and lets user choose what country they want to see the top wikipedia articles for. All the country codes and names are obtained through the imported the npm package country-list, https://www.npmjs.com/package/country-list/.
 
 ### DatePicker
 
-This component is one of the three parameters available in the search bar, and lets users choose what date they want to use when searching top wikipedia articles. The calender component itself is an import from AWS's public component library Cloudscape, https://cloudscape.design/, imported using npm.
+This component is one of the three parameters available in the search bar, and lets users choose what date they want to use when searching top wikipedia articles. The calender component itself is an npm import from AWS's public component library Cloudscape, https://cloudscape.design/.  
 
 ###  MostViewed
 
-This is the pimary component for this app, and is the parent of the search bar, result table, and table pagination. The pagination component is imported from the package 'react-paginate', https://www.npmjs.com/package/react-paginate. 
+This is the pimary component for this app, and is the parent of the search bar, result table, and table pagination component. The pagination component is an npm import from the package 'react-paginate', https://www.npmjs.com/package/react-paginate. 
 
 ### ResultCard
 
@@ -50,7 +50,7 @@ All string are stores as constants in the 'strings' directory under a files resp
 
 ## Design
 
-The current design is very simple and straightforward. While there's nothing necessary wrong with it, a more delebritate stylek, perhaps even one that evokes a similar feeling to wikipedia itself, would help users make a mental connection of that this product is for at just a glance. In addition, creating custom pagination and calendar component would allow for greater creative control in how those elements blend in with the app as a whole.
+The current design is very simple and straightforward. While there's nothing necessary wrong with it, a more delebritate style, perhaps even one that evokes a similar feeling to Wikipedia itself, would help users make a mental connection of what this product is for at just a glance. In addition, creating custom pagination and calendar components would allow for greater creative control in how those elements blend in with the app as a whole.
 
 ## Functionality
 
