@@ -54,7 +54,7 @@ The current design is very simple and straightforward. While there's nothing nec
 
 ## Functionality
 
-With regards to the results themselves, it would be helpful to allow users to click on each result and read a short summary of the related wikipedia page, as well as have a link that the page itself if they wanted to read further. As for the wider table, a more appropriate empty table can be created when there are no results available, but also no associated api error. At the moment it is just a blank space with the search bar on top. Finally, a there can be a greater degree of control when it comes to the search parameters and results, specifically allowing users to type in the country they want rather than pick from a dropdown, and letting using decide how many results appear on a single page, not just the overall table.
+With regards to the results themselves, it would be helpful to allow users to click on each result and read a short summary of the related wikipedia page, as well as have a link that the page itself if they wanted to read further. As for the wider table, a more appropriate empty table can be created when there are no results available, but also no associated api error. At the moment it is just a blank space with the search bar on top. Finally, there can be a greater degree of control when it comes to the search parameters and results, specifically allowing users to type in the country they want rather than pick from a dropdown, and letting users decide how many results appear on a single page, not just the overall table.
 
 
 # Getting Started with Create React App
